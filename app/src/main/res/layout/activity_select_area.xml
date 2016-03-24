@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3ccc"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="选择地区"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_province"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#3ccc"
+            android:layout_height="wrap_content"
+            android:text="省份"/>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#ccc"/>
+
+        <Button
+            android:id="@+id/btn_city"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#3ccc"
+            android:layout_height="wrap_content"
+            android:text="城市"/>
+
+        <TextView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#ccc"/>
+
+        <Button
+            android:id="@+id/btn_district"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#3ccc"
+            android:layout_height="wrap_content"
+            android:text="区域"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
